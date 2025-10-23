@@ -1,3 +1,4 @@
+```text
 Microstack-J/
 │
 ├── README.md
@@ -63,4 +64,4 @@ Microstack-J/
     ├── init_project.sh
     ├── run_local_cluster.sh
     └── cleanup_env.sh
-
+```
