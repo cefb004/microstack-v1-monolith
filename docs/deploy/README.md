@@ -11,13 +11,13 @@ As imagens abaixo ajudam a entender o papel do **DevOps** e do **CI/CD** no cicl
 2. **DevOps vs CI/CD**
    - Compara os conceitos e mostra como o CI/CD Ã© parte integrante da cultura e do ciclo DevOps.
 
-> í¶¼ï¸ Arquivos incluÃ­dos:
+> ï¿½ï¿½ï¿½ï¸ Arquivos incluÃ­dos:
 > - `CICD.jpeg`
 > - `DEVOPS.jpeg`
 
 ---
 
-## íº€ PrÃ³ximas Etapas
+## ï¿½ï¿½ï¿½ PrÃ³ximas Etapas
 
 1. Implementar **Docker Compose** para deploy local (ambiente de desenvolvimento).  
 2. Implantar nas plataformas **Render** e **AWS Free Tier** para fins de aprendizado.  
@@ -28,12 +28,10 @@ As imagens abaixo ajudam a entender o papel do **DevOps** e do **CI/CD** no cicl
 
 ---
 
-## í·­ ReferÃªncias
+## ï¿½ï¿½ï¿½ ReferÃªncias
 
 - *Continuous Delivery* â€” Jez Humble, David Farley  
-- *Accelerate: The Science of Lean Software and DevOps* â€” Nicole Forsgren et al.  
-- *Designing Data-Intensive Applications* â€” Martin Kleppmann (CapÃ­tulo 2 â€“ Data Models)
-
+- *Accelerate: The Science of Lean Software and DevOps* â€” Nicole Forsgren et al.
 ---
 
 > **ManutenÃ§Ã£o:**  
