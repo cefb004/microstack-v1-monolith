@@ -1,0 +1,48 @@
+# =============================
+# Linguagens principais
+# =============================
+*.java        linguist-language=Java
+*.ts          linguist-language=TypeScript
+*.html        linguist-language=HTML
+*.css         linguist-language=CSS
+*.scss        linguist-language=CSS
+*.sql         linguist-language=SQL
+*.yml         linguist-language=YAML
+*.yaml        linguist-language=YAML
+Dockerfile    linguist-language=Dockerfile
+
+# =============================
+# Ignorar conteúdo que distorce o gráfico
+# =============================
+
+# Dependências (não contam como código-fonte)
+node_modules/*       linguist-vendored
+frontend/node_modules/*  linguist-vendored
+backend/target/*     linguist-vendored
+backend/build/*      linguist-vendored
+frontend/dist/*      linguist-vendored
+
+# Testes e exemplos (opcional ignorar)
+tests/*              linguist-vendored
+**/test/*            linguist-vendored
+**/__tests__/*       linguist-vendored
+
+# Documentação e metadados
+docs/*               linguist-documentation
+README.md            linguist-documentation
+*.md                 linguist-documentation
+*.pdf                linguist-documentation
+
+# Configurações auxiliares
+*.json               linguist-vendored
+*.lock               linguist-vendored
+*.iml                linguist-vendored
+*.log                linguist-vendored
+.idea/*              linguist-vendored
+.vscode/*            linguist-vendored
+
+# =============================
+# Extras (se quiser incluir Shell scripts)
+# =============================
+*.sh                 linguist-language=Shell
+
