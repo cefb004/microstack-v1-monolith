@@ -40,6 +40,10 @@ Este diretório poderá incluir os seguintes artefatos:
 - Documentação de referência dos frameworks utilizados (Spring Boot, Angular, etc.)
 
 ---
+## Documentação complementar
+
+- [Persistência Poliglota e Distribuída](./persistencia-poliglota.md)
+
 
 > **Manutenção:**  
 > Este documento será atualizado conforme novos diagramas e decisões arquiteturais forem adicionados.
