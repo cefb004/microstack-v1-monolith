@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: microstack-j
+  profiles:
+    active: dev   # muda para 'prod' no Render (via variável de ambiente)
+
+server:
+  port: 8080
+
