@@ -1,16 +1,30 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${DB_HOST:renderdb}:${DB_PORT:5432}/${DB_NAME:microstack_prod}
-    driver-class-name: org.postgresql.Driver
-    username: ${DB_USER:postgres}
-    password: ${DB_PASSWORD:postgres}
+    url: jdbc:h2:file:./data/microstack_prod
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: ${PORT:8080}
 
 logging:
   level:
-    root: WARN
-    com.microstackj.backend: INFO
+    root: INFO
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
 
