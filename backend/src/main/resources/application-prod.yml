@@ -1,9 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-d49kbsmmcj7s73ehs4t0-a:5432/microstack_prod
+    url: jdbc:postgresql://dpg-d49kbsmmcj7s73ehs4t0-a.oregon-postgres.render.com:5432/microstack_prod
     username: postgres01
     password: J0GWb7Y1Xpzx0Hu4i2xZQxr8YiT77KWm
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -11,4 +12,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  sql:
+    init:
+      mode: always
 
