@@ -10,6 +10,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
 @RequestMapping("/api/users")
+@CrossOrigin(origins = "https://microstack-j-front.onrender.com")
 @Tag(name = "Users", description = "APIs para gerenciar usuários")
 public class UserController {
 
