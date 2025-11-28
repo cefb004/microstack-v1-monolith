@@ -13,7 +13,7 @@ The project combines:
 
 - Infrastructure with Docker, Kubernetes, and CI/CD pipelines.
 
-This project is intended for learning purposes, serving as a sandbox for practicing backend, frontend, DevOps, and data engineering integration.
+This project is intended for learning purposes, serving as a sandbox for practicing backend, frontend and DevOps.
 
 ## 🏗️ Architecture
 🔹 Application Layer
