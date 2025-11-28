@@ -9,8 +9,8 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
-@RequestMapping("/api/users")
-@CrossOrigin(origins = "https://microstack-j-front.onrender.com")
+@RequestMapping("/users")
+@CrossOrigin(origins = {"http://localhost:4200", "https://microstack-j-front.onrender.com"})
 @Tag(name = "Users", description = "APIs para gerenciar usuários")
 public class UserController {
 
@@ -20,13 +20,13 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    @GetMapping
+    @GetMapping(path = { "", "/" })
     @Operation(summary = "Listar usuários", description = "Retorna lista de usuários")
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    @PostMapping
+    @PostMapping({ "", "/" })
     @Operation(summary = "Criar usuário", description = "Cria um novo usuário")
     public User createUser(@RequestBody User user) {
         return userRepository.save(user);
