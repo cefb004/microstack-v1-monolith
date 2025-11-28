@@ -13,8 +13,6 @@ The project combines:
 
 - Infrastructure with Docker, Kubernetes, and CI/CD pipelines.
 
-- Data Engineering layer with open-source tools for ETL/ELT, real-time data processing, and analytics dashboards.
-
 This project is intended for learning purposes, serving as a sandbox for practicing backend, frontend, DevOps, and data engineering integration.
 
 ## 🏗️ Architecture
@@ -36,31 +34,6 @@ This project is intended for learning purposes, serving as a sandbox for practic
 
 - Kafka / RabbitMQ → Messaging and event-driven communication.
 
-🔹 Data Engineering Layer
-
-- Apache Kafka → Streams of business events (e.g., rentals).
-
-- MinIO (S3 compatible) → Data Lake storage for raw events.
-
-- Apache Airflow → Orchestration of ETL/ELT pipelines.
-
-- dbt (Data Build Tool) → SQL-based transformations inside the Data Warehouse.
-
-- PostgreSQL / ClickHouse → Data Warehouse for analytics.
-
--Apache Superset / Metabase → Dashboards and BI visualization.
-
-## 📊 Data Flow Example
-
-A user rents a game (via Angular → Spring Boot → PostgreSQL).
-
-The event is published to Kafka.
-
-The Analytics Service consumes the event and stores raw data in MinIO (Data Lake).
-
-Airflow + dbt pipelines process and transform data into the Data Warehouse (PostgreSQL/ClickHouse).
-
-Superset/Metabase provides real-time dashboards accessible via the frontend.
 ## Goals
 
 - Learn and practice Full Stack Java development.
@@ -68,10 +41,6 @@ Superset/Metabase provides real-time dashboards accessible via the frontend.
 - Build a modular and scalable microservices ecosystem.
 
 - Explore event-driven architecture with Kafka.
-
-- Integrate a Data Engineering pipeline for analytics.
-
-- Provide dashboards for insights and monitoring.
 
 ## 🛠️ Tech Stack
 
@@ -97,20 +66,6 @@ Infrastructure
 
 - GitHub Actions
 
-Data Engineering
-
-- Apache Kafka
-
-- MinIO (Data Lake)
-
-- Apache Airflow
-
-dbt
-
-PostgreSQL / ClickHouse
-
-Apache Superset / Metabase
-
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-brightgreen?logo=springboot&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-17-red?logo=angular&logoColor=white)
@@ -129,4 +84,4 @@ Apache Superset / Metabase
 ## 📌 Status
 
 This project is work in progress and meant for study and experimentation.
-Future iterations may expand microservices, add new data pipelines, and improve analytics capabilities.
+Future iterations may expand microservices.
