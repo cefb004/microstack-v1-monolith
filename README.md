@@ -1,70 +1,103 @@
-# MicroStack-J
-
+# Microstack V1 – Monolithic Application (MVC Architecture)
 [![Demo Online](https://img.shields.io/badge/demo-online-brightgreen)](https://microstack-j-front.onrender.com/)
 
-Overview
+📌 Overview
 
-MicroStack-J is a Full Stack Java application designed to demonstrate a modern microservices architecture.
-The project combines:
+Microstack V1 is the initial monolithic implementation of the Microstack platform.
+It was built using the Model–View–Controller (MVC) architecture and serves as the foundation for understanding the system before evolving it into a distributed microservices ecosystem.
 
-- Backend with Spring Boot microservices.
+This repository is used for learning, experimentation, benchmarking, and comparison with the later Microstack-J microservices architecture.
 
-- Frontend with Angular.
+🧱 Architecture
 
-- Infrastructure with Docker, Kubernetes, and CI/CD pipelines.
+The system follows a traditional MVC structure:
 
-This project is intended for learning purposes, serving as a sandbox for practicing backend, frontend and DevOps.
+Model – Represents the domain entities and application data.
 
-## 🏗️ Architecture
-🔹 Application Layer
+View – Templates/UI layer rendered by the server.
 
-- Angular Frontend → User interface (CRUD, dashboards).
+Controller – Handles HTTP requests, orchestrates logic, and interacts with services and models.
 
-- Spring Boot Microservices → Core business logic (e.g., Person, Game Rental, Publisher).
+This design keeps the code modular and maintainable, while still operating as a single deployable artifact.
 
-- PostgreSQL → Relational database for transactional data.
+🛠 Tech Stack
 
-🔹 Infrastructure Layer
+Depending on your exact implementation, adjust the items—but here is a professional baseline:
 
-- Docker → Containerization.
+Java (or your language here)
 
-- Kubernetes → Orchestration and scalability.
+Spring Boot (MVC) or your MVC framework of choice
 
-- GitHub Actions → CI/CD pipelines.
+Thymeleaf / JSP / HTML templates
 
-- Kafka / RabbitMQ → Messaging and event-driven communication.
+PostgreSQL / H2 (development mode)
 
-## Goals
+REST endpoints (internal and external)
 
-- Learn and practice Full Stack Java development.
+Maven or Gradle
 
-- Build a modular and scalable microservices ecosystem.
+Docker (optional)
 
-- Explore event-driven architecture with Kafka.
+🚀 How to Run the Project
+1. Clone the repository
+git clone https://github.com/your-user/microstack-v1-monolith.git
+cd microstack-v1-monolith
 
-## 🛠️ Tech Stack
+2. Build
+mvn clean install
 
-Backend
+3. Run
+mvn spring-boot:run
 
-- Java 17 + Spring Boot
+4. Access
+http://localhost:8080
 
-- REST APIs
+📂 Project Structure
+```
+microstack-v1-monolith/
+ ├── src/
+ │   ├── main/
+ │   │   ├── java/... (Controllers, Services, Models)
+ │   │   ├── resources/
+ │   │   │   ├── templates/ (Views)
+ │   │   │   └── application.properties
+ │   └── test/
+ ├── pom.xml or build.gradle
+ └── README.md
+```
 
-- PostgreSQL
+🌱 Purpose of This Version
 
-- Frontend
+This monolithic version exists to:
 
-- Angular
+Learn the fundamentals of the Microstack platform.
 
-- TypeScript
+Understand domain boundaries before splitting into independent services.
 
-Infrastructure
+Benchmark monolith vs microservices performance.
 
-- Docker & Docker Compose
+Compare architecture, scalability, observability, deployments, and persistence strategies.
 
-- Kubernetes
+🔄 Evolution Path
 
-- GitHub Actions
+This project is a precursor to the distributed Microstack-J system.
+The evolution plan includes:
+
+Splitting modules into independent microservices (Users, Orders, Notifications, Inventory).
+
+Introducing an API Gateway.
+
+Adding polyglot services (Java, Node, Rust, Elixir).
+
+Moving to cloud environments such as AWS and Render.
+
+Implementing async messaging (Redis), observability, CI/CD, and multicloud patterns.
+
+The monolith remains useful as the baseline to compare both architectures.
+
+📜 License
+
+MIT License
 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-brightgreen?logo=springboot&logoColor=white)
